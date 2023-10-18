@@ -41,5 +41,5 @@ const Product = ({
     </Card>
   )
 }
-// continuar do minuto 18
+
 export default Product
