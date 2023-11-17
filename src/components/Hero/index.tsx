@@ -6,7 +6,7 @@ import { formataPreco } from '../ProductsList'
 import { Banner, Infos } from './styles'
 import { useDispatch } from 'react-redux'
 
-import { add } from '../../store/reducers/cart'
+import { add, open } from '../../store/reducers/cart'
 
 type Props = {
   game: Game
@@ -17,9 +17,9 @@ const Hero = ({ game }: Props) => {
 
   const addToCart = () => {
     dispatch(add(game))
+    dispatch(open())
   }
-  //CONTINUAR DO MINUTO  11:13
-  // da aula Adicione e remova produtos
+
   return (
     <Banner style={{ backgroundImage: `url(${game.media.cover})` }}>
       <div className="container">
