@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
-import * as S from './styles'
+import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import logo from '../../assets/images/logo.svg'
 import cartIcon from '../../assets/images/carrinho.svg'
 
 import { open } from '../../store/reducers/cart'
-import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
-import { useState } from 'react'
+import * as S from './styles'
 
 const Header = () => {
   const dispatch = useDispatch()
